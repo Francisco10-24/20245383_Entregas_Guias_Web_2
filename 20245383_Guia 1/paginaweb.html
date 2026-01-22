@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona - Fansite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-barca {
+            background: linear-gradient(135deg, #004D98 0%, #A50044 100%);
+        }
+        
+        .gradient-header {
+            background: linear-gradient(135deg, #A50044 0%, #004D98 100%);
+        }
+        
+        .gradient-jugadores {
+            background: linear-gradient(135deg, #004D98 0%, #002D5C 100%);
+        }
+        
+        .hover-card {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-transition {
+            background: linear-gradient(to bottom, #ffffff, #f8fafc);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navegación con gradiente -->
+    <nav class="gradient-barca text-white p-4 shadow-lg">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-yellow-400 to-red-500 mr-3"></div>
+                    <h1 class="text-2xl font-bold">FC BARCELONA</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a>
+                    <a href="#historia" class="hover:text-yellow-300 transition duration-300">Historia</a>
+                    <a href="#jugadores" class="hover:text-yellow-300 transition duration-300">Jugadores</a>
+                    <a href="#estadio" class="hover:text-yellow-300 transition duration-300">Estadio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header con gradiente suave -->
+    <header id="inicio" class="gradient-header py-16 px-4 text-center text-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">MÉS QUE UN CLUB</h2>
+            <p class="text-xl mb-8 opacity-90">Pasión Blaugrana desde 1899</p>
+            
+            <!-- IMAGEN DEL ESTADIO - Cambia esta URL -->
+            <div class="max-w-4xl mx-auto">
+                <img src="/20245383_Guia 1/images/camp-nou.png" 
+                     alt="Estadio Camp Nou" 
+                     class="w-full rounded-xl shadow-2xl border-4 border-white/30 hover-card">
+                <p class="mt-4 text-lg opacity-90">El Spotify Camp Nou, nuestro hogar</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Historia con transición suave -->
+    <section id="historia" class="section-transition py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-[#004D98]">NUESTRA HISTORIA</h3>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        El FC Barcelona fue fundado en 1899 y se ha convertido en uno de los clubes más importantes del mundo.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Con 27 Ligas, 31 Copas del Rey y 5 Champions League, somos sinónimo de buen fútbol y valores deportivos.
+                    </p>
+                    
+                    <div class="mt-6 p-5 bg-gradient-to-r from-blue-50 to-red-50 rounded-xl border-l-4 border-[#A50044]">
+                        <h4 class="font-bold text-[#004D98] mb-3 text-lg">Logros Principales:</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-[#004D98]">5</div>
+                                <div class="text-sm text-gray-600">Champions League</div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-[#004D98]">27</div>
+                                <div class="text-sm text-gray-600">Ligas Españolas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- IMAGEN HISTÓRICA - Cambia esta URL -->
+                <div class="text-center">
+                    <div class="relative">
+                        <img src="/20245383_Guia 1/images/historica.jpg" 
+                             alt="Historia del Barça" 
+                             class="rounded-xl shadow-lg hover-card w-full">
+                        <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#004D98] to-[#A50044] text-white px-4 py-2 rounded-full text-sm">
+                            Fundado en 1899
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Jugadores con gradiente suave -->
+    <section id="jugadores" class="gradient-jugadores py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-white">NUESTROS JUGADORES</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Jugador 1 - Cambia la imagen -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-card">
+                    <div class="relative">
+                        <img src="/20245383_Guia 1/images/yamal.jpg" 
+                             alt="Lamine Yamal" 
+                             class="w-full h-52 object-cover">
+                        <div class="absolute top-3 right-3 bg-gradient-to-r from-[#A50044] to-[#004D98] text-white px-3 py-1 rounded-full text-sm font-bold">
+                            10
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-xl text-[#004D98]">Lamine Yamal</h4>
+                        <p class="text-gray-600">Delantero</p>
+                        <p class="text-gray-700 text-sm mt-3">Joven promesa de la cantera culé con gran talento.</p>
+                    </div>
+                </div>
+                
+                <!-- Jugador 2 - Cambia la imagen -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-card">
+                    <div class="relative">
+                        <img src="/20245383_Guia 1/images/pedri.jpg" 
+                             alt="Pedri" 
+                             class="w-full h-52 object-cover">
+                        <div class="absolute top-3 right-3 bg-gradient-to-r from-[#004D98] to-[#A50044] text-white px-3 py-1 rounded-full text-sm font-bold">
+                            8
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-xl text-[#004D98]">Pedri</h4>
+                        <p class="text-gray-600">Centrocampista</p>
+                        <p class="text-gray-700 text-sm mt-3">Cerebro del centro del campo con visión única.</p>
+                    </div>
+                </div>
+                
+                <!-- Jugador 3 - Cambia la imagen -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-card">
+                    <div class="relative">
+                        <img src="/20245383_Guia 1/images/cubarsi.jpeg" 
+                             alt="Cubarsi" 
+                             class="w-full h-52 object-cover">
+                        <div class="absolute top-3 right-3 bg-gradient-to-r from-[#A50044] to-[#004D98] text-white px-3 py-1 rounded-full text-sm font-bold">
+                            5
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-xl text-[#004D98]">Cubarsi</h4>
+                        <p class="text-gray-600">Defensa Central</p>
+                        <p class="text-gray-700 text-sm mt-3">Garra, corazón y talento en cada partido.</p>
+                    </div>
+                </div>
+                
+                <!-- Jugador 4 - Cambia la imagen -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-card">
+                    <div class="relative">
+                        <img src="/20245383_Guia 1/images/joan.jpg" 
+                             alt="Joan García" 
+                             class="w-full h-52 object-cover">
+                        <div class="absolute top-3 right-3 bg-gradient-to-r from-[#004D98] to-[#A50044] text-white px-3 py-1 rounded-full text-sm font-bold">
+                            13
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-xl text-[#004D98]">Joan Garcia</h4>
+                        <p class="text-gray-600">Portero</p>
+                        <p class="text-gray-700 text-sm mt-3">Clase de juego y seguridad en cada partido.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-white/90 text-lg">¡Agrega tus fotos favoritas en la carpeta /images!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Estadio -->
+    <section id="estadio" class="bg-gradient-to-b from-white to-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-[#004D98]">NUESTRO ESTADIO</h3>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-5">
+                    <h4 class="text-2xl font-bold text-[#A50044] mb-4">Spotify Camp Nou</h4>
+                    <p class="text-gray-700">
+                        El estadio más grande de Europa, con capacidad para 99,354 espectadores.
+                    </p>
+                    <p class="text-gray-700">
+                        Inaugurado en 1957, es el corazón del fútbol catalán y un símbolo mundial.
+                    </p>
+                    
+                    <div class="bg-gradient-to-r from-red-50 to-blue-50 p-5 rounded-xl border border-gray-200">
+                        <h5 class="font-bold text-[#A50044] mb-3 text-lg">Datos del Estadio:</h5>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 rounded-full bg-[#004D98] mr-3"></div>
+                                <span class="text-gray-700">Capacidad: 99,354 personas</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 rounded-full bg-[#A50044] mr-3"></div>
+                                <span class="text-gray-700">Inauguración: 24 de septiembre de 1957</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500 mr-3"></div>
+                                <span class="text-gray-700">Ubicación: Barcelona, España</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- IMAGEN DEL ESTADIO 2 - Cambia esta URL -->
+                <div>
+                    <img src="/20245383_Guia 1/images/camp-nou.png" 
+                         alt="Vista del Camp Nou" 
+                         class="rounded-xl shadow-lg hover-card w-full border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con gradiente -->
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-[#004D98] via-[#A50044] to-yellow-500"></div>
+            </div>
+            
+            <h4 class="text-xl font-bold mb-4">FC BARCELONA FANSITE</h4>
+            <p class="text-gray-300 mb-6 max-w-md mx-auto">Sitio creado por fans para fans. No afiliado oficialmente al club.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-6">
+                <a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a>
+                <a href="#historia" class="hover:text-yellow-300 transition duration-300">Historia</a>
+                <a href="#jugadores" class="hover:text-yellow-300 transition duration-300">Jugadores</a>
+                <a href="#estadio" class="hover:text-yellow-300 transition duration-300">Estadio</a>
+            </div>
+            
+            <p class="text-gray-400 text-sm">© 2026 - Visca el Barça!</p>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
